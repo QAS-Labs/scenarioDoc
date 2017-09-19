@@ -6,6 +6,7 @@ Feature: Coffees should brew dark with espresso
   @coffees @brewing
   Scenario Outline: Coffees should brew
     Given an order for a <type> coffee
+    Given order
     When I brew with <shots> shots of espresso
     And I mix with <ounces> ounces of milk
     Then the coffee should be marked as a <coffeetype>
